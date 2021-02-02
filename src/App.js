@@ -1,10 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 import "./styles.css";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-    </div>
-  );
+class App extends Component {
+  render() {
+    const name = "John";
+    return (
+      <div className="App">
+        <h1>Hello {name} </h1>
+      </div>
+    );
+  }
 }
+export default App;
