@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import "./styles.css";
+import Navbar from "./components/layout/Navbar";
+import UserItem from "./components/layout/users/UserItem";
 
 class App extends Component {
   render() {
-    const name = "John";
     return (
-      <div className="App">
-        <h1>Hello {name} </h1>
+      <div>
+        <Navbar />
+        <UserItem />
       </div>
     );
   }
